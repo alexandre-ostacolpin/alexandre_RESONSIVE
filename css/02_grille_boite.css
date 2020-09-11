@@ -1,0 +1,141 @@
+body {
+    background-color: oldlace;
+}
+
+.vert {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+}
+
+.bleu-leger {
+    background-color: rgb(61, 197, 243);
+    color: #fff;
+    text-align: center;
+}
+
+.conteneur {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    /* background: purple; */
+    flex-shrink: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* margin-bottom: 15px; */
+    /* justify-content: space between */   
+}
+
+footer {
+    background: green;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1097px) {
+
+    body {
+        background: #fff;
+    }
+
+    .conteneur {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background-color: purple;
+    }
+}
+
+
+.col-1 {
+    width: 8.333333%;
+}
+/* cette valeur est pourcentage  */
+.col-2 {
+    width: 16.666666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666666%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666666%;
+}
+.col-12 {
+    width: 100%;
+}
+/* Grilles 12 colonnes normes */
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}

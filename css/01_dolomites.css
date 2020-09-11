@@ -1,7 +1,6 @@
 body {
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
 }
 .vert {
     background-color: green;
@@ -10,31 +9,43 @@ body {
 }
 .orange {
     background-color: orange;
-}
-nav {
+    color: #fff;
     text-align: center;
 }
+/* le contenu principal */
 .conteneur {
     margin: 0 auto;
-    width: 1000px;
-    background-color: #fff;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 main {
     flex: 1;
-    /* flex:1 ? */
 }
+
 footer  {
     flex-shrink: 0;
 }
+
+nav {
+    height: 80px;
+    margin-bottom: 10px;
+    line-height: 80px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* la classe pour crée une rangée */
 .row {
     display: flex;
     flex-direction: row;
-    margin-bottom: 15px;
-    flex-wrap: nowrap;
+    /* margin-bottom: 15px; */
+    flex-wrap: wrap;
     /* justify-content: space between */   
 }
 .row-reverse {
@@ -44,52 +55,40 @@ footer  {
 }
 .col-1 {
     width: 8.333333%;
-    padding: 0 4px;
 }
 /* cette valeur est pourcentage  */
 .col-2 {
     width: 16.666666%;
-    padding: 0 4px;
 }
 .col-3 {
     width: 25%;
-    padding: 0 4px;
 }
 .col-4 {
     width: 33.333333%;
-    padding: 0 4px;
 }
 .col-5 {
     width: 41.666666%;
-    padding: 0 4px;
 }
 .col-6 {
     width: 50%;
-    padding: 0 4px;
 }
 .col-7 {
     width: 58.333333%;
-    padding: 0 4px;
 }
 .col-8 {
     width: 66.666666%;
-    padding: 0 4px;
 }
 .col-9 {
     width: 75%;
-    padding: 0 4px;
 }
 .col-10 {
     width: 83.333333%;
-    padding: 0 4px;
 }
 .col-11 {
     width: 91.666666%;
-    padding: 0 4px;
 }
 .col-12 {
     width: 100%;
-    padding: 0 4px;
 }
 /* Grilles 12 colonnes normes */
 /* les marges à gauche pour créer si on le veut des colonnes vides */
@@ -125,4 +124,103 @@ footer  {
 }
 .marge-11 {
     margin-left: 91.666666%;
+}
+
+/* Les règles de médias queries pour le responsive et les différents écrans */
+
+/* pour les téléphones */
+
+@media (max-width: 320px) {
+    body {
+        background: #fff;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: yellow;
+    }
+
+    /* pour le footer  */
+
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .colonne-xs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* pour les petites tablettes et les smartphones avec de grand écrans, les phablettes */
+
+@media (min-width: 321px) and (max-width: 767px) {
+
+    body {
+        background: #fff;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(235, 238, 39);
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* border: 5px solid #000; */
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    /* pour le footer  */
+
+    .colonne-sm {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* Les tablettes et certains ordinateurs portable */
+
+@media (min-width: 768px) and (max-width: 1096px) {
+
+    body {
+        background: #fff;
+    }
+
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lightblue;
+    }
+}
+
+/* écrans ordinateurs de bureau, tous les écrans plus grand que 1097px */
+
+@media (min-width: 1097px) {
+
+    body {
+        background: #fff;
+    }
+
+    .conteneur {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        background-color: purple;
+    }
 }
